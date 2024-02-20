@@ -2,7 +2,7 @@
   <main class="main_container">
     <h1 class="title">O que você deseja conquistar?</h1>
 
-    <Menu />
+    <MenuOptions />
 
     <div class="products_displayInfo" v-if="productStore.productList[0]">
       Exibindo {{ productStore.showProducts }} produtos de {{ productStore.productList[0].products.length }} totais.
@@ -34,7 +34,7 @@
 
 <script setup>
 import ProductCard from '../components/ProductCard.vue'
-import Menu from '../components/Menu.vue'
+import MenuOptions from '../components/MenuOptions.vue'
 import { useProductsStore } from '../stores/products';
 import { onMounted, computed } from 'vue';
 import { instance } from '../services';

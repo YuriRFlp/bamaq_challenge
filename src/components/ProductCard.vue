@@ -33,8 +33,6 @@
 </template>
 
 <script setup>
-import { useProductsStore } from '../stores/products';
-const productStore = useProductsStore();
 
 const props = defineProps([
   'product_type',
